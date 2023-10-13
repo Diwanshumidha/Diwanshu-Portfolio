@@ -230,5 +230,5 @@ export function findLinkByName(name: string) {
   return "/";
 }
 
-export const sourceCodeLink = "https://guthib.com/";
+export const sourceCodeLink = "https://github.com/Diwanshumidha/Diwanshu-Portfolio";
 export const Email = "contactdm@gmail.com";
