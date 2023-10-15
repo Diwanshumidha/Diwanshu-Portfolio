@@ -15,7 +15,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://diwanshuportfolio.vercel.app/'),
+  metadataBase: new URL('https://diwanshumidha.vercel.app/'),
   themeColor: 'white',
 };
 

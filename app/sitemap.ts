@@ -1,5 +1,5 @@
 export default function sitemap(){
-    const baseurl = 'https://diwanshuportfolio.vercel.app/'
+    const baseurl = 'https://diwanshumidha.vercel.app/'
     return [
         {
             url:baseurl,
