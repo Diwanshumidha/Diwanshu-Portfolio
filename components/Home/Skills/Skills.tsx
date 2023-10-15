@@ -33,7 +33,7 @@ const SkillCard = ({ skill }: skillprop) => {
     >
       <img
         src={`${skill.link}`}
-        alt="Title"
+        alt={skill.name}
         className={`${skill.style} w-[40px] h-[40px]`}
       />
       <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">{skill.name}</p>

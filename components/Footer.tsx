@@ -51,6 +51,7 @@ function Footer() {
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                   width="26"
                   title="React"
+                  alt="React"
                 />
                 <span className="sr-only">React</span>
               </span>
@@ -60,6 +61,7 @@ function Footer() {
                   width="40"
                   className="invert"
                   title="NextJS"
+                  alt="Nextjs"
                 />
                 <span className="sr-only">NextJS</span>
               </span>
@@ -68,6 +70,7 @@ function Footer() {
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                   width="26"
                   title="TailwindCSS"
+                  alt="Tailwind"
                 />
                 <span className="sr-only">TailwindCSS</span>
               </span>

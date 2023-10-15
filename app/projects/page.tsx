@@ -6,8 +6,13 @@ import React from 'react'
 export const metadata: Metadata = {
   title: "Projects - Diwanshu Midha",
   description:
-    "Welcome to my corner of the web! I am a passionate MERN (MongoDB, Express, React, Node.js) developer, and this is where I showcase my journey through the world of web development.",
-  
+    "These are my some of the amazing apps i build with user friendly ui with amazing features and responsiveness  ",
+    alternates: {
+      canonical: "/projects",
+      languages: {
+        "en-US": "/en-US",
+      },
+    },
 };
 
 const page = () => {
