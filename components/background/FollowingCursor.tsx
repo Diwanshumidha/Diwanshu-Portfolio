@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 const FollowingCursor = () => {  const ref = useRef<HTMLDivElement>(null)
 
   // Add an event listener to track mouse movement
-  const trackMouse = (e) => {
+  const trackMouse = (e:MouseEvent) => {
     const { clientX, clientY } = e;    
     ref.current?.animate({
         left: `${clientX}px`,
