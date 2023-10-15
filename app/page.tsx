@@ -71,12 +71,12 @@ export const metadata = {
     follow: true,
     nocache: true,
   },
-  // verification: {
-  //   google: 'zOmhd2rafpvsPkUgdUby7eFXc3bu7L_3nl4UfDcbNGg',
-  //   other: {
-  //     me: ['saidishu1880@gmail.com'],
-  //   },
-  // },
+  verification: {
+    google: 'zOmhd2rafpvsPkUgdUby7eFXc3bu7L_3nl4UfDcbNGg',
+    other: {
+      me: ['saidishu1880@gmail.com'],
+    },
+  },
 };
 const Home = () => {
   return (
