@@ -25,7 +25,7 @@ function Footer() {
                         >
                           {item.icon && (
                             <span className="pr-2 -mb-1">
-                              <img title="icon" src={item.icon} width={20} height={20} />
+                              <img title="icon" alt={item.name} src={item.icon} width={20} height={20} />
                             </span>
                           )}
                           {item.name}

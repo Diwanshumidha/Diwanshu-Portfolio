@@ -1,5 +1,5 @@
-import { Button, buttonVariants } from '@/components/ui/button'
-import { SocialLinks, findLinkByName } from '@/lib/Data'
+import { buttonVariants } from '@/components/ui/button'
+import { findLinkByName } from '@/lib/Data'
 import Link from 'next/link'
 import {AiFillGithub, AiFillLinkedin, AiFillTwitterSquare, AiOutlineDownload} from 'react-icons/ai'
 const HeroSection = () => {
