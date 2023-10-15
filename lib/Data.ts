@@ -82,7 +82,7 @@ export const SocialLinks = [
   {
     name: "Twitter",
     link: "https://twitter.com/DiwanshuMd",
-    icon: "/icons/twitter.svg",
+    icon: "/icons/Twitter.svg",
     leavesWebsite: true,
   },
   {

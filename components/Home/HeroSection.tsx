@@ -9,7 +9,7 @@ const HeroSection = () => {
     <h1 className='inline-block text-foreground max-w-2xl lg:max-w-4xl w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold'>Turning <span className=' text-primary'>Ideas</span> into seamless web <span className=' text-primary'>realities</span>.</h1>
     <div className=' flex gap-5 '>
     <Link  className={buttonVariants({variant:'outline',size:'lg',class:'w-[190px]',rounded:'full'})} href={'#contact'}>Contact Me</Link>
-    <a  className={buttonVariants({variant:'outline',size:'lg',class:'w-[130px] max-md:hidden gap-2',rounded:'full'})} target='_blank' href={'/resume.pdf'}>CV<AiOutlineDownload size={16}/></a>
+    <a  className={buttonVariants({variant:'outline',size:'lg',class:'w-[130px] max-md:hidden gap-2',rounded:'full'})} target='_blank' href={'/Resume.pdf'}>CV<AiOutlineDownload size={16}/></a>
 
     {/* <Button variant={'outline'} size={'lg'} className='w-[130px] max-md:hidden gap-2' rounded={'full'}>CV<AiOutlineDownload size={16}/></Button> */}
     </div>
