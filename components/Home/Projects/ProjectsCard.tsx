@@ -1,6 +1,5 @@
 "use client";
 import { type ProjectType } from "@/lib/Data";
-import Link from "next/link";
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import Tilt from "react-parallax-tilt";
@@ -9,8 +8,9 @@ const ProjectsCard = ({ Project }: { Project: ProjectType }) => {
   return (
     <Tilt scale={1.02}>
       <div className="max-w-sm group mx-auto flex flex-col projects-center md:projects-start md:justify-center">
-        <Link
+        <a
           href={Project.link || Project.githublink || "/"}
+          target="_blank"
           className=" relative w-[366.516px] h-[231.91px]  rounded-xl border-secondary border p-2 transition group-hover:-translate-y-2 group-hover:opacity-75 group-hover:border-primary will-change-projectCard"
         >
           <img
@@ -18,7 +18,7 @@ const ProjectsCard = ({ Project }: { Project: ProjectType }) => {
             alt="IMAGE"
             src={Project.img}
           ></img>
-        </Link>
+        </a>
 
         <div className="w-full mt-5">
           <div className="flex projects-center justify-between">

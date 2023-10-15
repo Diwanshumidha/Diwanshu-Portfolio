@@ -14,9 +14,9 @@ const HeroSection = () => {
     {/* <Button variant={'outline'} size={'lg'} className='w-[130px] max-md:hidden gap-2' rounded={'full'}>CV<AiOutlineDownload size={16}/></Button> */}
     </div>
     <div className=' fixed right-6 bottom-6 max-md:hidden justify-center items-center flex flex-col gap-2'>
-        <a title=' Github' className='hover:text-primary cursor-pointer' href={findLinkByName('GitHub')}><AiFillGithub size={25}/></a>
-        <a title=' Linkedin' className='hover:text-primary cursor-pointer' href={findLinkByName('LinkedIn')}><AiFillLinkedin size={25}/></a>
-        <a title=' Twitter' className='hover:text-primary cursor-pointer' href={findLinkByName('Twitter')}><AiFillTwitterSquare size={25}/></a>
+        <a title=' Github' className='hover:text-primary cursor-pointer' target='_blank' href={findLinkByName('GitHub')}><AiFillGithub size={25}/></a>
+        <a title=' Linkedin' className='hover:text-primary cursor-pointer' target='_blank' href={findLinkByName('LinkedIn')}><AiFillLinkedin size={25}/></a>
+        <a title=' Twitter' className='hover:text-primary cursor-pointer' target='_blank' href={findLinkByName('Twitter')}><AiFillTwitterSquare size={25}/></a>
         <div className=' h-20 w-1 bg-primary'></div>
     </div>
     <div className='absolute w-7 group cursor-pointer h-12 border-input bottom-8 border rounded-full '>
