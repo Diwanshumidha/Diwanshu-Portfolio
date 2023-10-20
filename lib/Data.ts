@@ -9,6 +9,15 @@ export const PROJECTS = [
     skills: ["React", "Tailwind", "Css"],
   },
   {
+    title: "Norton --Notion Clone",
+    description:
+      "A fully functional text editor like notion",
+    img: "https://i.ibb.co/p0PLL77/Screenshot-2023-10-20-221517.png",
+    link: "https://notate-editor.vercel.app/",
+    githublink: "https://github.com/Diwanshumidha/notion_clone",
+    skills: ["Nextjs", "Tailwind", "Prisma","Next Auth", "Shadcn"],
+  },
+  {
     title: "Next Boost CLI",
     description: "A CLI tool to setup next js app easily and quickly",
     img: "/projects/snap.png",
