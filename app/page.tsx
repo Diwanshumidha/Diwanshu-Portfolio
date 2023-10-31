@@ -1,7 +1,10 @@
-import Contact from "@/components/Home/Contact/Contact";
 import HeroSection from "@/components/Home/HeroSection";
-import Projects from "@/components/Home/Projects/Projects";
 import Skills from "@/components/Home/Skills/Skills";
+import dynamic from "next/dynamic";
+
+const Contact = dynamic(() => import("@/components/Home/Contact/Contact"));
+const Projects = dynamic(() => import("@/components/Home/Projects/Projects"));
+
 export const metadata = {
   title: "Diwanshu Midha - MERN Stack Developer ",
   description:
@@ -55,8 +58,7 @@ export const metadata = {
     "Deevanshu Midha",
     "Diwanshu Midha Profile",
     "Dm",
-    "diwmidha"
-
+    "diwmidha",
   ],
   authors: [{ name: "Diwanshu Midha" }],
   colorScheme: "dark",
@@ -72,9 +74,9 @@ export const metadata = {
     nocache: true,
   },
   verification: {
-    google: 'zOmhd2rafpvsPkUgdUby7eFXc3bu7L_3nl4UfDcbNGg',
+    google: "zOmhd2rafpvsPkUgdUby7eFXc3bu7L_3nl4UfDcbNGg",
     other: {
-      me: ['saidishu1880@gmail.com'],
+      me: ["saidishu1880@gmail.com"],
     },
   },
 };

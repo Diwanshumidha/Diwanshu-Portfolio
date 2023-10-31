@@ -9,20 +9,28 @@ export const PROJECTS = [
     skills: ["React", "Tailwind", "Css"],
   },
   {
-    title: "Norton --Notion Clone",
+    title: "Gen AI",
     description:
-      "A fully functional text editor like notion",
-    img: "https://i.ibb.co/p0PLL77/Screenshot-2023-10-20-221517.png",
+      "Gen Ai is an app that provides amazing ai tools such as Image Generation, text summarizer",
+    img: "https://th.bing.com/th/id/OIG.9clBc3ZYbRiEyPQ3pbnH?pid=ImgGn",
     link: "https://notate-editor.vercel.app/",
-    githublink: "https://github.com/Diwanshumidha/notion_clone",
-    skills: ["Nextjs", "Tailwind", "Prisma","Next Auth", "Shadcn"],
+    githublink: "https://github.com/Diwanshumidha/Gen-AI",
+    skills: ["Nextjs", "Tailwind", "Hugging Face", "Shadcn"],
   },
   {
     title: "Next Boost CLI",
     description: "A CLI tool to setup next js app easily and quickly",
     img: "/projects/snap.png",
     githublink: "https://github.com/Diwanshumidha/NextBoost",
-    skills: ["Npm", "nodejs",'git'],
+    skills: ["Npm", "nodejs", "git"],
+  },
+  {
+    title: "Norton A Note Taking App",
+    description: "A fully functional text editor like notion",
+    img: "https://th.bing.com/th/id/OIG.GCrZqX1oCvWDmQIlVJe1?pid=ImgGn",
+    link: "https://notate-editor.vercel.app/",
+    githublink: "https://github.com/Diwanshumidha/notion_clone",
+    skills: ["Nextjs", "Tailwind", "Prisma", "Next Auth", "Shadcn"],
   },
   {
     title: "Next Boost",
@@ -43,8 +51,7 @@ export const PROJECTS = [
   },
   {
     title: "Gardern Your Relationship",
-    description:
-      "Worked in Gardern Your Relationship for Tann Mann Foundation",
+    description: "Worked in Gardern Your Relationship for Tann Mann Foundation",
     img: "/projects/gyr.png",
     link: "https://gardeningyourrelationships.com/",
     skills: ["React", "Tailwind"],
@@ -239,5 +246,6 @@ export function findLinkByName(name: string) {
   return "/";
 }
 
-export const sourceCodeLink = "https://github.com/Diwanshumidha/Diwanshu-Portfolio";
+export const sourceCodeLink =
+  "https://github.com/Diwanshumidha/Diwanshu-Portfolio";
 export const Email = "contactdm@gmail.com";
