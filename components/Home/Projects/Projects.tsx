@@ -1,9 +1,8 @@
 import React from "react";
 import ProjectsCard from "./ProjectsCard";
 import { PROJECTS } from "@/lib/Data";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
-import { cva } from "class-variance-authority";
 
 const Projects = () => {
   return (
@@ -16,12 +15,22 @@ const Projects = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 gap-12 md:gap-5 md:grid-cols-3 items-start">
-        {PROJECTS.slice(0, 3).map((Project,idx) => (
+        {PROJECTS.slice(0, 3).map((Project, idx) => (
           <ProjectsCard key={idx} Project={Project} />
         ))}
       </div>
       <div className="relative w-full mt-12 flex justify-center items-center">
-        <Link className={buttonVariants({variant:'outline',rounded:'full',class:'w-[70%]'})} href={'/projects'}> View All </Link>
+        <Link
+          className={buttonVariants({
+            variant: "outline",
+            rounded: "full",
+            class: "w-[70%]",
+          })}
+          href={"/projects"}
+        >
+          {" "}
+          View All{" "}
+        </Link>
       </div>
     </section>
   );
