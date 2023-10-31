@@ -103,7 +103,7 @@ export const SocialLinks = [
   },
   {
     name: "Email",
-    link: "mailto:contactdm@gmail.com",
+    link: "mailto:contactmidha@gmail.com",
     icon: "/icons/mail-f.svg",
     leavesWebsite: true,
   },
@@ -248,4 +248,4 @@ export function findLinkByName(name: string) {
 
 export const sourceCodeLink =
   "https://github.com/Diwanshumidha/Diwanshu-Portfolio";
-export const Email = "contactdm@gmail.com";
+export const Email = "contactmidha@gmail.com";
