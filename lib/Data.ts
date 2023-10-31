@@ -13,7 +13,6 @@ export const PROJECTS = [
     description:
       "Gen Ai is an app that provides amazing ai tools such as Image Generation, text summarizer",
     img: "https://th.bing.com/th/id/OIG.9clBc3ZYbRiEyPQ3pbnH?pid=ImgGn",
-    link: "https://notate-editor.vercel.app/",
     githublink: "https://github.com/Diwanshumidha/Gen-AI",
     skills: ["Nextjs", "Tailwind", "Hugging Face", "Shadcn"],
   },
