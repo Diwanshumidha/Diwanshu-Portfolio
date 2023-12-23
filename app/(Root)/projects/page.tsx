@@ -29,7 +29,6 @@ const page = async () => {
     query: query,
     tags: ["projects"],
   });
-  // console.log(PROJECTS);
 
   return (
     <>

@@ -8,7 +8,6 @@ import Tilt from "react-parallax-tilt";
 const NotFound = "/projects/NotFound.jpeg";
 
 const ProjectsCard = ({ Project }: { Project: Project }) => {
-  console.log(Project);
   return (
     <Tilt scale={1.02}>
       <div className="max-w-sm group mx-auto flex flex-col projects-center md:projects-start md:justify-center ">
@@ -21,6 +20,8 @@ const ProjectsCard = ({ Project }: { Project: Project }) => {
             className="w-full h-full object-cover rounded-md"
             alt="IMAGE"
             onError={(e) => (e.currentTarget.src = NotFound)}
+            width={150}
+            height={150}
             src={
               Project?.img?.asset ? urlForImage(Project.img.asset) : NotFound
             }
@@ -30,7 +31,7 @@ const ProjectsCard = ({ Project }: { Project: Project }) => {
         <div className="w-full mt-5">
           <div className="flex projects-center justify-between">
             <a rel="noopener" href={Project.link} target="_blank">
-              <h3 className="text-lg font-bold">{Project.title}</h3>
+              <h2 className="text-lg font-bold">{Project.title}</h2>
             </a>
             <div className="space-x-2 flex text-primary">
               {Project.link && (

@@ -10,9 +10,9 @@ function Footer() {
         {footer.columns.map((item, index) => {
           return (
             <div key={index} className="text-left mb-5 sm:mb-0">
-              <h4 className="uppercase text-fun-gray text-sm font-bold">
+              <h2 className="uppercase text-fun-gray text-sm font-bold">
                 {item.title}
-              </h4>
+              </h2>
               <div>
                 {item.links.map((item, index) => {
                   return (
@@ -25,7 +25,13 @@ function Footer() {
                         >
                           {item.icon && (
                             <span className="pr-2 -mb-1">
-                              <img title="icon" alt={item.name} src={item.icon} width={20} height={20} />
+                              <img
+                                title="icon"
+                                alt={item.name}
+                                src={item.icon}
+                                width={20}
+                                height={20}
+                              />
                             </span>
                           )}
                           {item.name}
@@ -51,7 +57,7 @@ function Footer() {
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                   width="26"
                   title="React"
-                  alt="React"
+                  alt="React Icon"
                 />
                 <span className="sr-only">React</span>
               </span>
@@ -61,7 +67,7 @@ function Footer() {
                   width="40"
                   className="invert"
                   title="NextJS"
-                  alt="Nextjs"
+                  alt="Nextjs Icon"
                 />
                 <span className="sr-only">NextJS</span>
               </span>
@@ -70,7 +76,7 @@ function Footer() {
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                   width="26"
                   title="TailwindCSS"
-                  alt="Tailwind"
+                  alt="Tailwind Icon"
                 />
                 <span className="sr-only">TailwindCSS</span>
               </span>
@@ -89,7 +95,7 @@ function Footer() {
         </div>
       </div>
       <div className="mt-8 text-center sm:text-right sm:-mt-12">
-        <a    
+        <a
           className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border  px-4 py-2 rounded-xl  cursor-pointer opacity-50"
           href={sourceCodeLink}
           target="_blank"
