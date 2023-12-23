@@ -1,10 +1,24 @@
 import React from "react";
 import ProjectsCard from "./ProjectsCard";
-import { PROJECTS } from "@/lib/Data";
+// import { PROJECTS } from "@/lib/Data";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
+import { groq } from "next-sanity";
+import { client } from "@/sanity/lib/client";
+import { Project } from "@/types/types";
+import { sanityFetch } from "@/sanity/lib/client.fetch";
 
-const Projects = () => {
+const Projects = async () => {
+  const query = groq`*[_type == 'projects'] {
+    ...,
+    skills->
+  } | order(priority desc)`;
+
+  const PROJECTS: Project[] = await sanityFetch({
+    query: query,
+    tags: ["projects"],
+  });
+
   return (
     <section className="flex flex-col text-left justify-between pt-8 relative my-14">
       <div id="learnmore">

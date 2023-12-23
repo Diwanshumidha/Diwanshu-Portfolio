@@ -1,6 +1,21 @@
-import { SKILLS } from "@/lib/Data";
+import { client } from "@/sanity/lib/client";
+import { sanityFetch } from "@/sanity/lib/client.fetch";
+import { Skills } from "@/types/types";
+import { groq } from "next-sanity";
 
-const Skills = () => {
+const Skills = async () => {
+  const query = groq`*[_type == 'skills'] {
+    name,
+    link,
+    style
+  }`;
+
+  // const SKILLS = (await client.fetch(query)) as Skills[];
+  const SKILLS: Skills[] = await sanityFetch({
+    query: query,
+    tags: ["skills"],
+  });
+
   return (
     <section className=" flex flex-col md:flex-row gap-5 md:gap-0  justify-center overflow-hidden ">
       <h2 className="text-3xl  relative max-md:text-center ">
@@ -18,14 +33,10 @@ const Skills = () => {
 
 export default Skills;
 
-type skillprop = {
-  skill: {
-    name: string;
-    link: string;
-    style?:string;
-  };
+type skillProp = {
+  skill: Skills;
 };
-const SkillCard = ({ skill }: skillprop) => {
+const SkillCard = ({ skill }: skillProp) => {
   return (
     <div
       title={skill.name}
@@ -36,7 +47,9 @@ const SkillCard = ({ skill }: skillprop) => {
         alt={skill.name}
         className={`${skill.style} w-[40px] h-[40px]`}
       />
-      <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">{skill.name}</p>
+      <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
+        {skill.name}
+      </p>
     </div>
   );
 };

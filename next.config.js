@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental:{ serverActions:true },
-}
+  experimental: {
+    serverActions: true,
+    urlImports: ["https://themer.sanity.build/"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
