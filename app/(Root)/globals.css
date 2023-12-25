@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
-
 
 @layer base {
   :root {
@@ -16,7 +14,7 @@
     --primary-foreground: 210 20% 98%;
     --secondary: 220 14.3% 95.9%;
     --secondary-foreground: 220.9 39.3% 11%;
-    --secondary-gray:220, 9%, 46%;
+    --secondary-gray: 220, 9%, 46%;
     --muted: 220 14.3% 95.9%;
     --muted-foreground: 220 8.9% 46.1%;
     --accent: 220 14.3% 95.9%;
@@ -27,9 +25,8 @@
     --input: 262.1 83.3% 57.8%;
     --ring: 262.1 83.3% 57.8%;
     --radius: 0.75rem;
-
   }
- 
+
   .dark {
     --background: 224 71.4% 4.1%;
     --foreground: 210 20% 98%;
@@ -41,7 +38,7 @@
     --primary-foreground: 210 20% 98%;
     --secondary: 215 27.9% 16.9%;
     --secondary-foreground: 210 20% 98%;
-    --secondary-gray:220, 9%, 46%;
+    --secondary-gray: 220, 9%, 46%;
     --muted: 215 27.9% 16.9%;
     --muted-foreground: 217.9 10.6% 64.9%;
     --accent: 215 27.9% 16.9%;
@@ -56,8 +53,8 @@
 
 *,
 *::after,
-*::before{
-  box-sizing: border-box
+*::before {
+  box-sizing: border-box;
 }
 
 @layer base {
@@ -69,16 +66,16 @@
   }
 }
 
-@layer components{
-  .input{
-    @apply flex py-3 w-full rounded-md border-2 border-secondary-gray bg-transparent px-3  text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50
+@layer components {
+  .input {
+    @apply flex py-3 w-full rounded-md border-2 border-secondary-gray bg-transparent px-3  text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50;
   }
 }
 
 .playing {
   animation: pulse 1s alternate ease-in infinite;
 }
-.pause{
+.pause {
   height: 20%;
 }
 
@@ -91,7 +88,7 @@
   }
 }
 
-.nav-link::after{
+.nav-link::after {
   width: 0%;
   content: "";
   position: absolute;
@@ -101,10 +98,8 @@
   background-color: hsl(var(--primary));
   transition: all 0.4s ease-in;
 }
-.nav-link:hover::after{
-  
+.nav-link:hover::after {
   width: 100%;
-  
 }
 
 .landingSectionTitle:before {
@@ -120,7 +115,7 @@
   background-color: hsl(var(--primary));
 }
 
-.SkillsSectionTitle::before{
+.SkillsSectionTitle::before {
   content: "";
   position: absolute;
   left: 105%;
@@ -132,7 +127,7 @@
   --tw-bg-opacity: 1;
   background-color: hsl(var(--primary));
 }
-.SkillsSectionTitle::after{
+.SkillsSectionTitle::after {
   content: "";
   position: absolute;
   left: 0;
@@ -144,43 +139,47 @@
   background-color: hsl(var(--primary));
 }
 
+.dark .color-invert {
+  filter: invert(1);
+}
 
-
-.dark  .color-invert{
-    filter: invert(1);
-  }
-
-
-.blob{
+.blob {
   /* animation: Rotate 20s infinite; */
-  background: linear-gradient(
-    to right,
-    aquamarine,
-    mediumpurple
-  );
+  background: linear-gradient(to right, aquamarine, mediumpurple);
   transform-origin: center;
-  
-  
 }
 @keyframes Rotate {
-  from{
+  from {
     rotate: 0deg;
   }
-  to{
+  to {
     rotate: 360deg;
   }
 }
 
 @layer base {
-  .masked{
+  .masked {
     clip-path: circle(1.3% at 50% 50%);
     opacity: 0;
     pointer-events: none;
   }
-  .unmasked{
+  .unmasked {
     clip-path: circle(70.7% at 50% 50%);
     opacity: 1;
     pointer-events: all;
     backdrop-filter: blur(300px);
+  }
+}
+
+.animate {
+  animation: transition forwards 1.5s cubic-bezier(0.62, 0.28, 0.23, 0.99);
+}
+
+@keyframes transition {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0%;
   }
 }
