@@ -30,6 +30,7 @@ function Footer() {
                                 alt={item.name}
                                 src={item.icon}
                                 width={20}
+                                loading="lazy"
                                 height={20}
                               />
                             </span>
@@ -57,6 +58,7 @@ function Footer() {
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                   width="26"
                   title="React"
+                  loading="lazy"
                   alt="React Icon"
                 />
                 <span className="sr-only">React</span>
@@ -67,6 +69,7 @@ function Footer() {
                   width="40"
                   className="invert"
                   title="NextJS"
+                  loading="lazy"
                   alt="Nextjs Icon"
                 />
                 <span className="sr-only">NextJS</span>
@@ -76,6 +79,7 @@ function Footer() {
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                   width="26"
                   title="TailwindCSS"
+                  loading="lazy"
                   alt="Tailwind Icon"
                 />
                 <span className="sr-only">TailwindCSS</span>
@@ -105,6 +109,7 @@ function Footer() {
             src="/icons/github.svg"
             width={16}
             height={16}
+            loading="lazy"
             alt="Github Icon"
             className=" text-primary"
           />

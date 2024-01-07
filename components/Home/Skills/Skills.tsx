@@ -44,6 +44,7 @@ const SkillCard = ({ skill }: skillProp) => {
     >
       <img
         src={`${skill.link}`}
+        loading="lazy"
         alt={skill.name}
         className={`${skill.style} w-[40px] h-[40px]`}
       />

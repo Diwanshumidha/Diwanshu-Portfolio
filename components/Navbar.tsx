@@ -40,6 +40,7 @@ function Navbar() {
             <img
               className=" text-primary w-[24px] h-[24px] cursor-pointer"
               alt="srccode"
+              loading="lazy"
               src="/icons/github.svg"
             />
             <span className=" sr-only">Source Code</span>

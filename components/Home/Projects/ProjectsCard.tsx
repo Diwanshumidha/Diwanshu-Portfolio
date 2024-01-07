@@ -21,6 +21,7 @@ const ProjectsCard = ({ Project }: { Project: Project }) => {
             alt="IMAGE"
             onError={(e) => (e.currentTarget.src = NotFound)}
             width={150}
+            loading="lazy"
             height={150}
             src={
               Project?.img?.asset ? urlForImage(Project.img.asset) : NotFound
