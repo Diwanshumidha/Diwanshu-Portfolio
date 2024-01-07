@@ -12,11 +12,11 @@ import {
 const HeroSection = () => {
   return (
     <section className=" flex justify-center relative  w-full m-auto flex-col text-center items-center h-[calc(100dvh-80px)] pt-20 pb-40">
-      <p className="text-xl mb-5">Hey, I'm Diwanshu.</p>
-      <h1 className="inline-block text-foreground max-w-2xl lg:max-w-4xl w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold">
+      <h1 className="text-xl mb-5">Hey, I'm Diwanshu.</h1>
+      <p className="inline-block text-foreground max-w-2xl lg:max-w-4xl w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold">
         Turning <span className=" text-primary">Ideas</span> into seamless web{" "}
         <span className=" text-primary">realities</span>.
-      </h1>
+      </p>
       <div className=" flex gap-5 ">
         <Link
           className={buttonVariants({

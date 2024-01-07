@@ -1,21 +1,19 @@
 import HeroSection from "@/components/Home/HeroSection";
 import Skills from "@/components/Home/Skills/Skills";
+import { Metadata } from "next";
 import dynamic from "next/dynamic";
 
 const Contact = dynamic(() => import("@/components/Home/Contact/Contact"));
 const Projects = dynamic(() => import("@/components/Home/Projects/Projects"));
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Diwanshu Midha - MERN Stack Developer ",
   description:
-    "Welcome to my corner of the web! I am a passionate MERN (MongoDB, Express, React, Node.js) developer, and this is where I showcase my journey through the world of web development.",
+    "Explore the web development journey of Diwanshu Midha, a skilled MERN and React Developer, showcasing expertise in full-stack development.",
   alternates: {
     canonical: "/",
-    languages: {
-      "en-US": "/en-US",
-    },
   },
-  siteName: "Diwanshu Midha Portfolio",
+
   openGraph: {
     title: "Diwanshu Midha",
     description:
@@ -47,6 +45,7 @@ export const metadata = {
     "Portfolio",
     "Diwanshu",
     "Diwanshu Midha",
+    "diwanshu",
     "Deewanshu",
     "Nextjs Portfolio",
     "Fullstack Developer",
@@ -68,6 +67,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
+
   robots: {
     index: true,
     follow: true,

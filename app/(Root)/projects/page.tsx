@@ -10,12 +10,9 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Projects - Diwanshu Midha",
   description:
-    "These are my some of the amazing apps i build with user friendly ui with amazing features and responsiveness  ",
+    "These are my some of the amazing Projects Diwanshu  build with user friendly ui with amazing features and responsiveness  ",
   alternates: {
     canonical: "/projects",
-    languages: {
-      "en-US": "/en-US",
-    },
   },
 };
 
