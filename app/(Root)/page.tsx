@@ -1,10 +1,10 @@
 import HeroSection from "@/components/Home/HeroSection";
-import Skills from "@/components/Home/Skills/Skills";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 
 const Contact = dynamic(() => import("@/components/Home/Contact/Contact"));
 const Projects = dynamic(() => import("@/components/Home/Projects/Projects"));
+const Skills = dynamic(() => import("@/components/Home/Skills/Skills"));
 
 export const metadata: Metadata = {
   title: "Diwanshu Midha - MERN Stack Developer ",

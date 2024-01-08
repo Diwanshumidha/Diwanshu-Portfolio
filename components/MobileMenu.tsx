@@ -16,7 +16,7 @@ const MobileMenu = () => {
       </div>
 
       <div
-        className={` w-full h-[100dvh] px-5 py-5 flex flex-col fixed bg-background ease-in transition-all duration-300 left-0 top-0 z-50 ${
+        className={` w-full h-[100dvh] px-5 py-5 flex flex-col fixed bg-background ease-out transition-all  duration-500 left-0 top-0 z-50 ${
           opened ? "unmasked" : "masked"
         }`}
       >
@@ -28,12 +28,17 @@ const MobileMenu = () => {
           <ul className=" w-full grow ">
             {routes.map((item, index) => {
               return (
-                <li key={index} className={`list-none  mt-4  w-full flex  justify-center text-gray-500`}>
+                <li
+                  key={index}
+                  className={`list-none  mt-4  w-full flex  justify-center text-gray-500`}
+                >
                   <NavLink
                     className=" hover:text-foreground text-2xl nav-link relative py-1"
                     activeClassName=" text-foreground"
                     href={item.path}
-                    onClick={()=>{setopen(false)}}
+                    onClick={() => {
+                      setopen(false);
+                    }}
                   >
                     {item.title}
                   </NavLink>
