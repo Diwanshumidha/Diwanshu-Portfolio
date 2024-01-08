@@ -47,9 +47,10 @@ function Navbar() {
           </a>
         </li>
       </ul>
-      <ul className="md:hidden">
+
+      <div className="md:hidden">
         <MobileMenu />
-      </ul>
+      </div>
     </nav>
   );
 }

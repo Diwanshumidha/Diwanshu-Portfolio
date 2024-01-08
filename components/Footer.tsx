@@ -27,9 +27,11 @@ function Footer() {
                             <span className="pr-2 -mb-1">
                               <img
                                 title="icon"
-                                alt={item.name}
+                                alt={`${item.name} Icon`}
                                 src={item.icon}
                                 width={20}
+                                aria-hidden
+                                className="italic"
                                 loading="lazy"
                                 height={20}
                               />

@@ -74,8 +74,10 @@ const HeroSection = () => {
       </div>
       <Link
         href={"#learnmore"}
+        aria-label="Go To Learn More"
         className="absolute w-7 group cursor-pointer h-12 border-input bottom-8 border rounded-full "
       >
+        <span className=" sr-only">Go To Learn More</span>
         <div className=" w-[70%] mt-1 group-hover:mt-[25px] transition-all mx-auto aspect-square rounded-full bg-primary top-5"></div>
       </Link>
     </section>
