@@ -41,6 +41,8 @@ function Navbar() {
               className=" text-primary w-[24px] h-[24px] cursor-pointer"
               alt="srccode"
               loading="lazy"
+              width={24}
+              height={24}
               src="/icons/github.svg"
             />
             <span className=" sr-only">Source Code</span>

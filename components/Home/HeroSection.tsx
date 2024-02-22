@@ -73,19 +73,12 @@ const HeroSection = () => {
         </a>
         <div className=" h-20 w-1 bg-primary"></div>
       </div>
-      {/* <Link
-        href={"#learnmore"}
-        aria-label="Go To Learn More"
-        className="absolute w-7 group cursor-pointer h-12 border-input bottom-8 border rounded-full "
-      >
-        <span className=" sr-only">Go To Learn More</span>
-        <div className=" w-[70%] mt-1 group-hover:mt-[25px] transition-all mx-auto aspect-square rounded-full bg-primary top-5"></div>
-      </Link> */}
+
       <Link
         href={"#learnmore"}
-        className="absolute group animate-float duration-1000 hover:animation-pause hover:scale-105 transition-all  cursor-pointer flex flex-col justify-center border-input bottom-12  rounded-full "
+        className="absolute group  animate-float duration-1000 hover:animation-pause  transition-all  cursor-pointer flex flex-col justify-center border-input bottom-12  rounded-full "
       >
-        <MouseIcon />
+        <MouseIcon style={{ scale: 0.7 }} />
       </Link>
     </section>
   );
