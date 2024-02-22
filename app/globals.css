@@ -65,6 +65,26 @@
     @apply bg-background text-foreground;
   }
 }
+@layer utilities {
+  .animate-float {
+    animation: float 2s infinite;
+  }
+  .animation-pause {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 @layer components {
   .input {

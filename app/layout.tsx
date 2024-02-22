@@ -11,7 +11,7 @@ const roboto = Roboto({
 export default function Root({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <html lang="en" className="!scroll-smooth">
+      <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
         <body
           className={`${roboto.className} w-full  min-h-[100dvh]   text-foreground  bg-background `}
         >
