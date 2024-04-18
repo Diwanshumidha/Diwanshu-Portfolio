@@ -2,6 +2,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Providers from "./(Root)/Providers";
 
+
 const roboto = Roboto({
   variable: "--roboto",
   weight: ["300", "400", "500", "700"],
