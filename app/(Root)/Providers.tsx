@@ -19,8 +19,8 @@ export default function ThemeProvider({
       disableTransitionOnChange
       {...props}
     >
-      <Chatbot apiKey="c4100fc3-700b-4cf1-a3eb-209b772b1795" themeColor="#6d28d9"  />
-        {children}
+      <Chatbot  roundedButton   apiKey="c4100fc3-700b-4cf1-a3eb-209b772b1795" themeColor="#6d28d9"  />
+      {children}
     </NextThemesProvider>
   );
 }
