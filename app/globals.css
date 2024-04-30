@@ -230,3 +230,8 @@
     -webkit-transform: scaleY(0);
   }
 }
+
+
+.chatbot-widget__body input{
+  background-color: white;
+}

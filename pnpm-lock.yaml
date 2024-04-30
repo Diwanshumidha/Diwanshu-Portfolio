@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@chatbuild/widget':
-    specifier: ^0.0.5
-    version: 0.0.5(react@18.2.0)
+    specifier: ^0.0.12
+    version: 0.0.12(react@18.2.0)
   '@radix-ui/react-icons':
     specifier: ^1.3.0
     version: 1.3.0(react@18.2.0)
@@ -354,8 +354,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@chatbuild/widget@0.0.5(react@18.2.0):
-    resolution: {integrity: sha512-5oXpiUYkvkwXd38kYf+Fos309lz1j40qg/AqZaAaXMqYAKhPAoNOAhIaS7eZssrpj9Es0Y9RWuhY9q/OB0isPQ==}
+  /@chatbuild/widget@0.0.12(react@18.2.0):
+    resolution: {integrity: sha512-iv6V9xDrWKh+2At3zUMA+KJdQQaweomNfOIcPUoX8fJxBtfR1LMuBmRNZSZe8x8GjiKPzqYLQ/7YfUCIQ9UQWQ==}
     peerDependencies:
       react: '>=16'
     dependencies:

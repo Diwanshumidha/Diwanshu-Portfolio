@@ -7,6 +7,12 @@ import { Toaster } from "@/components/ui/toaster";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
+const Chatbot = dynamic(
+  () => import("@/components/chatbot"), {
+    ssr:false
+  }
+)
+
 const FollowingCursor = dynamic(
   () => import("@/components/background/FollowingCursor")
 );
@@ -43,6 +49,7 @@ export default function RootLayout({
         <main className="mx-auto max-w-[1400px] px-5 md:px-14 ">
           {children}
         </main>
+        <Chatbot/>
         <Toaster />
         <Footer />
       </div>
