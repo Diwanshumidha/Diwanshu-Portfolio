@@ -5,7 +5,7 @@ import "@chatbuild/widget/dist/index.css"
 
 const ChatbotComponent = () => {
     return (
-    <Chatbot apiKey="c4100fc3-700b-4cf1-a3eb-209b772b1795" />
+    <Chatbot apiKey="5d63aa1b-851c-4b3b-a635-d280adfbc658" />
 )}
 
 export default ChatbotComponent
